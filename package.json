@@ -1,0 +1,52 @@
+{
+  "name": "surface-vectors",
+  "version": "0.0.0",
+  "description": "Debug utility for drawing surface vectors in WebGL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy demo.js:bundle.js",
+    "bundle": "browserify demo.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/surface-vectors.git"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hughsk/surface-vectors/issues"
+  },
+  "homepage": "https://github.com/hughsk/surface-vectors",
+  "dependencies": {
+    "gl-vao": "^1.1.2",
+    "glslify": "^1.2.1",
+    "gl-buffer": "^2.0.6",
+    "array-pack-2d": "^0.1.0"
+  },
+  "devDependencies": {
+    "game-shell-orbit-camera": "0.0.2",
+    "find-basis-3d": "0.0.0",
+    "unindex-mesh": "0.0.0",
+    "gl-matrix": "^2.1.0",
+    "gl-now": "^1.3.1",
+    "normals": "^0.1.0",
+    "teapot": "0.0.1",
+    "bunny": "^1.0.1"
+  },
+  "keywords": [
+    "surface",
+    "debug",
+    "vectors",
+    "normal",
+    "tangent",
+    "bitangent",
+    "visual",
+    "browser",
+    "webgl"
+  ]
+}
